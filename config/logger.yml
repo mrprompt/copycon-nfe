@@ -1,0 +1,6 @@
+# configurações do log
+log:
+    name: copycon
+    logfile: tmp/application.log
+    permission: 0664
+    level: DEBUG

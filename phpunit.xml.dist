@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         colors="true"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         stopOnError="true"
+         stopOnFailure="true"
+         stopOnIncomplete="false"
+         stopOnRisky="false"
+         verbose="true">
+    <testsuites>
+        <testsuite name="PagSeguro">
+            <directory>tests/PagSeguro</directory>
+        </testsuite>
+
+        <testsuite name="Eduzz">
+            <directory>tests/Eduzz</directory>
+        </testsuite>
+
+        <testsuite name="PayPal">
+            <directory>tests/PayPal</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

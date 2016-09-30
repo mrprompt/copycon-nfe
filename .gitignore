@@ -1,0 +1,6 @@
+/vendor/
+/tmp/*
+config/eduzz.yml
+config/nfe.yml
+config/pagseguro.yml
+

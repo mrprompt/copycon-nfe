@@ -1,0 +1,15 @@
+# config/routes.yml
+paypal:
+    path: /paypal/
+    defaults: { _controller: 'CopyCon\PayPal\Controller::post' }
+    methods: [POST]
+
+pagseguro:
+    path: /pagseguro/
+    defaults: { _controller: 'CopyCon\PagSeguro\Controller::post' }
+    methods: [POST]
+
+eduzz:
+    path: /eduzz/
+    defaults: { _controller: 'CopyCon\Eduzz\Controller::post' }
+    methods: [POST]
